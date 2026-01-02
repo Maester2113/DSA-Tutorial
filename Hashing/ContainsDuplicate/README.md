@@ -45,29 +45,17 @@ bool containsDuplicate(vector <int> &nums){
 
 ---
 
-## 💡 Initial Thoughts
-- 
-- 
+
+## 🔍 Important Concepts - Unordered_set vs Unordered_map
+- Unordered set are only used to check if a particular item exists. 
+- Sets cannot contain duplicates.
+- sets: hash(key) -> bucket -> key //(key is the value associated)
+  <br>VS<br>
+- Unordered maps are used to associate a value to every key it inserts.
+- Unordered maps are used to count the frequency of each element/key.
+- hash (key) -> bucket -> value(key) //(value of the key is associated to every key) 
 
 ---
 
-## ❌ Mistakes / Pitfalls
-- 
-- 
-
----
-
-## ✅ Final Approach
-- Step 1:
-- Step 2:
-- Step 3:
-
----
-
-## 🔍 Why This Works
-- 
-- 
-
----
-
-## 🧪 Example
+**Feel free to refer to the Unordered map quick notes.**
+- Unordered map → [Notes](DSA-Tutorial/Notes/Unordered_map.md)
