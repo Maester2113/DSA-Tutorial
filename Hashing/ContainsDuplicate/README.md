@@ -41,7 +41,7 @@ bool containsDuplicate(vector <int> &nums){
    - Trade off of space complexity. TC=O(1) SC=O(n)
 
      *Refer to the solutions.cpp*
-     - Contains Duplicate → [Code](ContainsDuplicate/solution.cpp)
+     - Contains Duplicate → [Code](solution.cpp)
 
 ---
 
