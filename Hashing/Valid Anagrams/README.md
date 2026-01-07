@@ -50,6 +50,6 @@ bool isAnagram(string s, string t){
 - The solution depends on what the interviewer demands. If they demand a space utilised code, go for the first solution. If the interviewer wants a space utilised solution, just implement the map bro.
 ---
 
-**Feel free to refer to the Unordered map quick notes.**
+**Feel free to refer to the quick notes.**
 - Unordered map → [Notes](DSA-Tutorial/Notes/Unordered_map.md)
 - Strings → [Notes](DSA-Tutorial/Notes/String.md)
