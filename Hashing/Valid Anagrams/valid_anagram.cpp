@@ -1,44 +1,43 @@
-// Slightly Optimized approach - using hashmaps. But downside is that it uses external space for creating the hashmap which can be as much as O(s)
-// But if the interviewer asks us to create something without any external space, we sort both the string ans compare - TC=O(n logn)
+// Unordered map approach: TC = O(n), SC = O(n)
 
-// #include <bits/stdc++.h>
-// using namespace std;
+#include <bits/stdc++.h>
+using namespace std;
 
-// bool isAnagram(string s, string t){
-//     unordered_map <char, int> freq;
-//     for (char ch:s){
-//         freq[ch]++;
-//     }
+bool isAnagram(string s, string t){
+    unordered_map <char, int> freq;
+    for (char ch:s){
+        freq[ch]++;
+    }
 
-//     for(char ch:t){
-//         freq[ch]--;
-//     }
+    for(char ch:t){
+        freq[ch]--;
+    }
 
-//     for(auto &it:freq){
-//         if(it.second<0 || it.second>0)
-//         return false;
-//     }
-//     return true;
-// }
-// int main() {
+    for(auto &it:freq){
+        if(it.second<0 || it.second>0)
+        return false;
+    }
+    return true;
+}
+int main() {
 
-//     string s,t;
-//     cout<<"Enter the first string"<<endl;
-//     getline(cin,s);
-//     cout<<"Enter the second string"<<endl;
-//     getline(cin,t);
+    string s,t;
+    cout<<"Enter the first string"<<endl;
+    getline(cin,s);
+    cout<<"Enter the second string"<<endl;
+    getline(cin,t);
 
-//     bool flag = isAnagram(s,t);
-//     if (flag)
-//         cout<<"The strings are Anagrams"<<endl;
-//     else
-//         cout<<"The strings are not Anagram"<<endl;
-//     return 0;
-// }
-
+    bool flag = isAnagram(s,t);
+    if (flag)
+        cout<<"The strings are Anagrams"<<endl;
+    else
+        cout<<"The strings are not Anagram"<<endl;
+    return 0;
+}
 
 
-// Optimized solution using sorting mechanism
+
+// Space optimized solution using sorting mechanism: TC: O(n logn) SC: no external space required.
 #include <bits/stdc++.h>
 using namespace std;
 
